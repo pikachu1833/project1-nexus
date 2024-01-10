@@ -1,0 +1,125 @@
+/* Add the eye icon for password toggle */
+.password-toggle::before {
+  content: "\1F441";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #4e54c8;
+  opacity: 0.5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #8f94fb, #63b3ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-btns {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#showLogin {
+  background-color: #4e54c8;
+  color: #fff;
+}
+
+#showSignup {
+  background-color: #8f94fb;
+  color: #fff;
+}
+
+#showLogin:hover,
+#showSignup:hover {
+  background-color: #3c438e;
+}
+
+.form-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #4e54c8;
+  margin-bottom: 15px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #4e54c8;
+  opacity: 0.5;
+}
+
+button[type="submit"] {
+  background-color: #4e54c8;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #3c438e;
+}
+
+#forgotPassword,
+#toggleSignupPassword,
+#toggleLoginPassword,
+#toggleNewPassword {
+  color: #4e54c8;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#forgotPassword:hover,
+#toggleSignupPassword:hover,
+#toggleLoginPassword:hover,
+#toggleNewPassword:hover {
+  text-decoration: underline;
+  color: #3c438e;
+}
